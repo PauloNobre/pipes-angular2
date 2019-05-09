@@ -16,9 +16,17 @@ export class ExemplosPipesComponent implements OnInit {
     url: 'https://www.amazon.com.br/Guerra-Tronos-Cr%C3%B4nicas-Gelo-Fogo/dp/8544102921'
   };
 
+  livros = ['Java', 'Angular 2'];
+
+  filtro: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addLivro(livro: string) {
+    this.livros.push(livro);
   }
 
 }
